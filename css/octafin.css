@@ -1,0 +1,124 @@
+body{
+  background-color: #162326;
+  font-family: 'Rajdhani', sans-serif;
+    }
+
+/* Start of navbar */
+
+.navbar {
+  padding-top: 30px;
+}
+
+.navbar a {
+  color: #337ab7;
+}
+.navbar-brand {
+font-size: 58px;
+}
+
+.navbar-nav {
+  float: right;
+  font-size: 30px;
+}
+
+/* End of navabr */
+
+/* Start of About section */
+
+#about{
+  border: solid 2px #337ab7;
+  border-radius: 0.5em;
+  color: #215077;
+  margin: 100px 40px 0px 40px;
+  padding: 0px 0px 50px 0px;
+  text-align: justify;
+  font-weight: bold;
+
+}
+
+#about h1 {
+  font-size: 40px;
+  }
+
+.image img {
+  border: solid 2px #7AA9D0;
+  border-radius: 50%;
+  width: 75%;
+  margin-top: 40px;
+  margin-left: 40px;
+  }
+
+
+/* End of About section */
+
+/* Start of Portfolio section */
+
+#portfolio{
+  color: #215077;
+  margin: 40px 150px 0px 150px;
+  padding: 100px 0px 50px 0px;
+}
+
+#portfolio div img {
+  display: block;
+  margin: auto;
+  }
+
+  .codepen img {
+    width: 120px;
+  }
+
+/* End of Porfolio section */
+
+/* Start of Contact Section */
+
+#contact {
+  margin: 60px 40px 0px 40px;
+  padding: 0px 0px 50px 0px;
+}
+
+
+#blurb {
+  color: #215077;
+  border: solid 2px #337ab7;
+  border-radius: 0.5em;
+  text-align: justify;
+  padding-bottom: 120px;
+  }
+
+#contact-form input {
+  background: #162326;
+  color:  #337ab7;
+  border: none;
+  border-bottom: solid 2px #337ab7;
+  border-radius: 0em;
+  font-size: 24px;
+  box-shadow: none;
+  }
+
+  #contact-form textarea {
+    background: #162326;
+    color:  #337ab7;
+    border: none;
+    border-bottom: solid 2px #337ab7;
+    border-radius: 0em;
+    font-size: 24px;
+    box-shadow: none;
+    }
+
+    #contact-form button {
+      background: #162326;
+      color:  #337ab7;
+      border: solid 2px #337ab7;
+      font-size: 24px;
+    }
+    #contact-form button:hover {
+      background: #337ab7;
+      color:  #162326;
+      border: solid 2px #162326;
+      font-size: 24px;
+    }
+
+  #blurb, #contact-form {
+    display: inline;
+  }
