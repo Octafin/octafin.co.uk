@@ -16,6 +16,8 @@
 
   <link rel="text/javascript" src="octafin.js">
 
+  <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
   <!-- Imported fonts -->
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
@@ -34,19 +36,31 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#about">Octafin</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
       </div>
-      <ul class="nav navbar-nav ">
+
+      <!-- Collapsible button for responsive menu -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
         <li class="active"><a href="#about">About</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact-form">Contact</a></li>
       </ul>
+      </div>
+
+      <!-- End of collapsible button -->
+
     </div>
   </nav>
   <!-- End of Navbar code -->
 
   <!-- Beginning of About Section -->
   <div class="container-fluid row" id="about">
-    <div class="blurb col-xs-8">
+    <div class="blurb col-sm-8">
     <h1>About me</h1>
     <h3>90's williamsburg artisan, pitchfork franzen church-key
       crucifix food truck lo-fi marfa listicle cold-pressed. Live-edge
@@ -60,7 +74,7 @@
           tacos enamel pin seit
     </h3>
     </div>
-    <div class="image col-xs-4">
+    <div class="image col-sm-4">
       <img src="img/octafin.png" />
     </div>
   </div>
@@ -71,12 +85,16 @@
 
   <div class="container-fluid row" id="portfolio">
 
-    <div class="github col-xs-6">
+    <div class="github col-sm-4">
       <a href="https://github.com/Octafin"><img src="img/GitHub-Mark-Light-120px-plus.png"  /></a>
     </div>
 
-    <div class="codepen col-xs-6">
+    <div class="codepen col-sm-4">
       <a href="https://codepen.io/Octafin/#"><img src="img/Button-Fill-White-Large.png"  /></a>
+    </div>
+
+    <div class="freecodecamp col-sm-4">
+      <a href="https://www.freecodecamp.com/octafin"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
     </div>
 
   </div>
@@ -91,33 +109,36 @@
 
 
 <div class="container-fluid row" id="contact">
-      <div class="container-fluid col-xs-6" id="blurb">
+
+      <div class="col-sm-6" id="blurb">
         <h2>Got some Q's? Wanna collaborate? Think I can be of help?
             Feel free to get in touch and I'll get back to you as soon
             as I can.
         </h2>
       </div>
 
-      <form class="container-fluid form col-xs-6" id="contact-form">
+      <form class="form col-sm-6" role="form" method="post" action="index.php" id="contact-form">
 
        <div class="form-group">
-         <input type="email" class="form-control" placeholder="email" id="email" required>
+         <input type="email" name="email" class="form-control" placeholder="email" id="email" required>
       </div>
 
       <div class="form-group">
-        <input type="name" class="form-control" placeholder="name" id="name" required>
+        <input type="name" name="name" class="form-control" placeholder="name" id="name" required>
       </div>
 
        <div class="form-group">
-          <input type="tel" class="form-control" placeholder="phone" id="tel" required/>
+          <input type="tel" name="tel" class="form-control" placeholder="phone" id="tel" required/>
        </div>
 
         <div class="form-group">
-          <textarea type="text-area" class="form-control" placeholder="message..." required></textarea>
+          <textarea type="text-area" name="message" class="form-control" placeholder="message..." required></textarea>
         </div>
 
-       <button type="submit" class="btn btn-default">Submit</button>
+       <button type="submit" action="index.php" class="btn btn-default">Submit</button>
     </form>
+
+
 
 </div>
     <!-- End of contact form -->

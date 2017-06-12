@@ -16,6 +16,13 @@ body{
 font-size: 58px;
 }
 
+/* Button to toggle responsive menu */
+
+.navbar-toggle {
+  border: solid 2px #337ab7;
+  height: 1px;
+}
+
 .navbar-nav {
   float: right;
   font-size: 30px;
@@ -66,6 +73,7 @@ font-size: 58px;
 
   .codepen img {
     width: 120px;
+
   }
 
 /* End of Porfolio section */
@@ -77,6 +85,11 @@ font-size: 58px;
   padding: 0px 0px 50px 0px;
 }
 
+#contact-form {
+  padding-left: 60px;
+
+}
+
 
 #blurb {
   color: #215077;
@@ -84,6 +97,8 @@ font-size: 58px;
   border-radius: 0.5em;
   text-align: justify;
   padding-bottom: 120px;
+  margin-right: 0px;
+  float: left; /* Crucial for getting border to wrap properly */
   }
 
 #contact-form input {
@@ -121,4 +136,4 @@ font-size: 58px;
 
   #blurb, #contact-form {
     display: inline;
-  }
+    }
