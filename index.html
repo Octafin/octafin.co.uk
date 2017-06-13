@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/octafin.css">
 
-  <link rel="text/javascript" src="octafin.js">
+  <!-- Animate.css -->
+
+  <link rel="stylesheet" href="css/animate.css">
 
   <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
 
@@ -22,7 +24,10 @@
   <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
 
   <!-- Jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="octafin.js"></script>
+  <script src="jquery.waypoints.min.js"></script>
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -60,7 +65,7 @@
 
   <!-- Beginning of About Section -->
   <div class="container-fluid row" id="about">
-    <div class="blurb col-sm-8">
+    <div class="blurb col-sm-8 animated bounceInLeft">
     <h1>About me</h1>
     <h3>90's williamsburg artisan, pitchfork franzen church-key
       crucifix food truck lo-fi marfa listicle cold-pressed. Live-edge
@@ -75,7 +80,7 @@
     </h3>
     </div>
     <div class="image col-sm-4">
-      <img src="img/octafin.png" />
+      <img src="img/octafin.png" class="animated bounceInRight"/>
     </div>
   </div>
 
@@ -90,11 +95,11 @@
     </div>
 
     <div class="codepen col-sm-4">
-      <a href="https://codepen.io/Octafin/#"><img src="img/Button-Fill-White-Large.png"  /></a>
+      <a href="https://codepen.io/Octafin/#"><img class="animated pulse" src="img/Button-Fill-White-Large.png"  /></a>
     </div>
 
     <div class="freecodecamp col-sm-4">
-      <a href="https://www.freecodecamp.com/octafin"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+      <a href="https://www.freecodecamp.com/octafin"><img class="animated pulse" src="img/Freecodecamp.png" /></a>
     </div>
 
   </div>
@@ -135,12 +140,14 @@
           <textarea type="text-area" name="message" class="form-control" placeholder="message..." id="message" required></textarea>
         </div>
 
-       <button type="submit" class="btn btn-default">Submit</button>
+       <button type="submit" class="btn btn-default submit animated bounceInRight">Submit</button>
     </form>
 
 
 
 </div>
     <!-- End of contact form -->
-<script type="text/javascript" src="js/octafin.js"></script>
+
+
+
 </html>
